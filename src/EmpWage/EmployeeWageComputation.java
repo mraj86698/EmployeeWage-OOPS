@@ -3,8 +3,12 @@ package EmpWage;
 public class EmployeeWageComputation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Welcome to Employee Wage Computation");
+		
+		EmpCompute emp = new EmpCompute();
+		emp.presentAbsent();
+		emp.dailyWage();
+		emp.monthlyWage();
+		emp.wage_till_condition();
 
 	}
 
