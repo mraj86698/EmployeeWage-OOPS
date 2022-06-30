@@ -6,6 +6,7 @@ public class EmployeeWageComputation {
 		
 		EmpCompute emp = new EmpCompute();
 		emp.present_absent();
+		emp.daily_wage();
 
 	}
 
