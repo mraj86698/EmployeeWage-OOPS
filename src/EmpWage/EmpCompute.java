@@ -50,5 +50,26 @@ public class EmpCompute {
 			System.out.println("The Employee is Absent ");
 		}
 	}
+	
+	public void wage_till_condition() {
+		int day_count = 1;
+		int hour_count = 0;
+		while (day_count != 20 && hour_count != 100) {
+			int emp_check = (int) (Math.floor(Math.random() * 10) % 3+1);
+			switch (emp_check) {
+			case 1:
+				day_count += 1;
+				hour_count += fullTimeHour;
+				break;
+			case 3:
+				day_count += 1;
+				hour_count += partTimeHour;
+				break;
+			default:
+				continue;
+			}
+		}
+		System.out.println("The employee Total Working Hours : " + wagePerHour * hour_count * day_count);
+	}
 
 }
