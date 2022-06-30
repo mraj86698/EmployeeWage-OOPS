@@ -28,8 +28,11 @@ public class EmpCompute {
 		if (empCheck == empPresent) {
 			System.out.println("Employee is Present");
 			System.out.println("Employee Daily Wage is : " + wagePerHour * fullTimeHour);
-		} else  {
+		} else if (empCheck == 2) {
 			System.out.println("Employee is Absent");
+		} else {
+			System.out.println("Employee is part time");
+			System.out.println("Employee Daily Wage is : " +  wagePerHour * partTimeHour );
 		}
 	}
 
