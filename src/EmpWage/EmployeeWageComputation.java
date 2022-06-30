@@ -7,8 +7,7 @@ public class EmployeeWageComputation {
 		EmpCompute emp = new EmpCompute();
 		emp.presentAbsent();
 		emp.dailyWage();
-		emp.monthlyWage();
-		emp.wage_till_condition();
+		
 
 	}
 
