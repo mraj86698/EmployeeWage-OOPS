@@ -51,25 +51,6 @@ public class EmpCompute {
 	}
 
 	public void wage_till_condition() {
-//		int day_count = 1;
-//		int hour_count = 0;
-//		while (day_count != 20 && hour_count != 100) {
-//			int emp_check = (int) (Math.floor(Math.random() * 10) % 3+1);
-//			switch (emp_check) {
-//			case 1:
-//				day_count += 1;
-//				hour_count += fullTimeHour;
-//				break;
-//			case 3:
-//				day_count += 1;
-//				hour_count += partTimeHour;
-//				break;
-//			default:
-//				continue;
-//			}
-//		}
-//		System.out.println("Wages of the month : " + wagePerHour * hour_count * day_count);
-//	}
 
 		final int part_Time = 2;
 		final int full_Time = 1;
@@ -98,17 +79,20 @@ public class EmpCompute {
 				System.out.println("Employee is Present FullTime\n");
 				working_Hours = 8;
 				dailyWages = working_Hours * wage_per_Hour;
+				day++;
 
 				break;
 
 			case part_Time:
 				System.out.println("Employee Present PartTime\n");
 				working_Hours = 4;
+				day++;
 				break;
 
 			default:
 				System.out.println("Employee is Absent\n");
 				working_Hours = 0;
+				day++;
 				break;
 
 			}
@@ -118,7 +102,7 @@ public class EmpCompute {
 
 			System.out.printf("%5d		%5d		%5d		%5d\n", day, working_Hours, dailyWages,totalWorkingHoursInMonth);
 		}
-
+		System.out.println();
 		System.out.println("Total Working Hours of the Month : " + totalWorkingHoursInMonth + "Hours");
 		System.out.println();
 		System.out.println("Total wage for a month :  " + MonthlyWages);
