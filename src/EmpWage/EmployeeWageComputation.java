@@ -8,9 +8,10 @@ public class EmployeeWageComputation {
 
 		EmpCompute emp = new EmpCompute();
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Employee Options to show them:");
 
 		while(true) {
-			System.out.println("\n 1. Employee is absent or present\n 2.Employee daily wage\n3.Employee monthly wage\n4.Employee wage till conditiion");
+			System.out.println("\n 1.Employee is absent or present\n 2.Employee daily wage\n 3.Employee monthly wage\n 4.Employee wage till conditiion");
 			int choice = sc.nextInt();
 			switch(choice) {
 			case 1:
